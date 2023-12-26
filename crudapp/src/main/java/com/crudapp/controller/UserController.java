@@ -14,7 +14,7 @@ public class UserController {
     @Autowired
     private UserService userv;
 
-@RequestMapping("/updatelist")
+@RequestMapping("/update")
     public String method4(User user,Model model){
         userv.saveuser(user);
         List<User>users=userv.listusers();
